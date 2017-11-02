@@ -12,7 +12,7 @@ cd $SRC_DIR
 tar xzpf confluent-oss-3.3.0-2.11.tar.gz
 tar xzpf mysql-connector-java-5.1.44.tar.gz
 cp $SRC_DIR/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar $SRC_DIR/confluent-3.3.0/share/java/kafka-connect-jdbc/
-echo "Done. CP Oss 3.3.0 available in $SCRIPT_DIR/sources/confluent-3.3.0"
+echo "Done. CP Oss 3.3.0 available in $SRC_DIR/sources/confluent-3.3.0"
 echo ""
 echo "to start : $SRC_DIR/confluent-3.3.0/bin/confluent start"
 echo ""
