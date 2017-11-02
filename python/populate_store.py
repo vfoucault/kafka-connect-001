@@ -21,7 +21,7 @@ def main():
     print "Generating 4000 Videos..."
     generate_videos(4000, cnx)
     print "Generating 1000 Rentals..."
-    generate_rental(1000, cnx)
+    generate_rental(10000, cnx)
     cnx.close()
     print "Done."
 
@@ -38,8 +38,8 @@ def generate_rental(count, cnx):
         video_id = randint(1, 4000)
         data = (video_id, client_id, start, stop)
         cursor.execute(add_rental, data)
+        cnx.commit()
         count -= 1
-    cnx.commit()
     cursor.close()
 
 
