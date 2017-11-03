@@ -1,6 +1,6 @@
 DROP DATABASE IF EXISTS `demodb_1`;
 CREATE DATABASE `demodb_1`;
-CREATE TABLE `customers` (
+CREATE TABLE `demodb_1`.`customers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `firstname` varchar(255) DEFAULT NULL,
   `lastname` varchar(255) DEFAULT NULL,
